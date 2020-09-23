@@ -1,5 +1,6 @@
 const familyTree = require('./family-tree.js')
 
+/*--------Testing that all family mebers are present*/ 
 describe('Family Tree', function () 
 {
     test('I am in my family tree', function() 
@@ -14,6 +15,7 @@ describe('Family Tree', function ()
         expect(cousin.name).toEqual('Ntsana')
     })
 
+    //testing mother is present but also that she's linked as my parent
     test('Mum is also there', function() 
     {
         const mum = familyTree[0].parents[0]
@@ -38,9 +40,10 @@ describe('Family Tree', function ()
         expect(grandma.name).toEqual('Ellen')
     })
 
+    //testing Grandpa is present but also that she's linked as my cousins grandparent through my aunt
     test('Grandpa is also there', function() 
     {
-        const grandpa = familyTree[2].parents[1]
+        const grandpa = familyTree[1].parents[0].parents[1]
         expect(grandpa.name).toEqual('Ernest')
     })
 
@@ -48,6 +51,7 @@ describe('Family Tree', function ()
 
 })
 
+/*--------Testing that all family mebers are in the correct generation categories*/ 
 describe('Generations', function () 
 {
     test('I am in 1st Generation', function() 
