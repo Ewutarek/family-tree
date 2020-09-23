@@ -1,0 +1,22 @@
+{
+  "name": "family-tree",
+  "version": "1.0.0",
+  "description": "family-tree tested ",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watchAll"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ewutarek/family-tree.git"
+  },
+  "keywords": [
+    "test"
+  ],
+  "author": "kpheko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ewutarek/family-tree/issues"
+  },
+  "homepage": "https://github.com/Ewutarek/family-tree#readme"
+}
